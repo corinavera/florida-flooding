@@ -6,7 +6,9 @@ html {
   font-size: 16px;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -14,6 +16,10 @@ html {
 body {
   margin: 0;
   font-family: sans-serif;
+  color: white;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 35px;
+  text-align:justify;
 }
 
 /* images and videos max out at full width */
@@ -25,12 +31,12 @@ video {
 
 .content-container {
   position: relative;
-  height:80vh;
+  height: 80vh;
 }
 
 i {
   font-size: 28px;
-  color: orange;
+  color: blue;
   display: inline-block;
   margin-top: 15px;
   cursor: pointer;
@@ -56,13 +62,16 @@ h1 {
   text-align: center;
 }
 
+h3 {
+  text-align: center;
+}
+
 /* every element with this class takes up the full 
  width and height of the screen */
 .full-screen {
-  border: 1px solid grey;
+  border: 2px solid grey;
   width: 100%;
-  height: 80vh;
-  position: absolute;
+  height: 130vh;
   top: 0;
   left: 0;
   padding: 25px;
@@ -78,26 +87,29 @@ h1 {
 }
 
 #slide-1 {
-  background: #84B59F;
+  background-image: url("https://cdn.glitch.global/e3d10d8b-5fd5-4d01-ba2d-51ea23c01490/luis-vidal-f5_rRxchjoU-unsplash.jpg?v=1667614319260");
+  height: 80vh;
 }
 
 #slide-2 {
-  background: #31AFD4;
+  background-image: url(https://cdn.glitch.global/e3d10d8b-5fd5-4d01-ba2d-51ea23c01490/wade-austin-ellis-5T7dG1MRA3U-unsplash.jpg?v=1667618537465);
 }
 
 #slide-3 {
-  background: #E9B44C;
+  background-image: url(https://cdn.glitch.global/e3d10d8b-5fd5-4d01-ba2d-51ea23c01490/kelly-sikkema-_whs7FPfkwQ-unsplash.jpg?v=1667618630457);
 }
 
 button {
   display: block;
   margin-top: 20px;
+  margin-bottom: 20px;
   background: yellow;
   border: none;
   padding: 5px;
   color: black;
   cursor: pointer;
-  border-radius:20px;
+  border-radius: 20px;
+  position: center;
 }
 
 button:hover {
@@ -105,17 +117,18 @@ button:hover {
 }
 
 #checklist {
- position:absolute;
-  top:0;
-  right:0;
-  bottom:0;
-  width:200px;
-  padding:25px;
-  background:orange;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+  padding: 25px;
+  background: #151b54;
 }
 
 .hidden-checklist {
-  width:0px;
-  overflow:hidden;
-  padding:0;
+  width: 0px;
+  overflow: hidden;
+  padding: 0;
 }
+
