@@ -3,9 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="https://glitch.com/favicon.ico" />
-
-    <title>Preparing for Halloween</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Baskerville">
+    <title>Florida Flooding</title>
 
     <!-- import Bootstrap icons -->
     <link
@@ -17,61 +16,135 @@
     <link rel="stylesheet" href="style.css" />
 
     <!-- import html2canvas library -->
-   <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js" defer></script>
-    
+    <script
+      src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"
+      defer
+    ></script>
+
     <script src="script.js" defer></script>
   </head>
   <body>
     <!-- this is the start of content -->
-<div>
-  <button id="toggle-checklist" onclick="toggleChecklist()">    
- Open Checklist</button>
+    <div>
+      <button id="toggle-checklist" onclick="toggleChecklist()">
+        Open Checklist
+      </button>
     </div>
-    <i class="bi bi-arrow-left-square left" onclick="goBack()"></i>
-    <i class="bi bi-arrow-right-square right" onclick="goForward()"></i>
-    
+    <i class="bi bi-arrow-left-circle-fill left" onclick="goBack()"></i>
+    <i class="bi bi-arrow-right-circle-fill right" onclick="goForward()"></i>
+
     <div class="content-container">
       <!-- three placeholder sections of content -->
       <section class="full-screen" id="slide-1">
-        <h1>Preparing for Halloween</h1>
-        <p>Costume Construction Tips</p>
+        <h1><u>Florida Flooding</u></h1>
+        <p>
+          Almost every day of the year, some areas of the United States and its
+          territories are threatened by flooding, especially states such as
+          Florida. As a matter of fact, one of Florida's main hazards is
+          flooding. It poses a year-round threat that extends from coast to
+          coast. Anywhere it rains, a flood could happen.
+        </p>
+        <p>
+          With more than 650 miles of beaches, over 1,100 miles of stunning
+          coastline, a humid subtropical climate in the north, and a tropical
+          climate in the south, Florida has it all. Florida has more rivers,
+          streams, and waterways than any other state in the nation, with an
+          average annual rainfall of 59.21 inches, yet because of its flat
+          terrain, it floods more frequently than any other state in the union.
+        </p>
+        <p>
+          Knowing what to do before, during, and after a flood will help you
+          safeguard your property and boost your chances of survival. For
+          instance, knowing what to do if you are traveling and come across a
+          flooded road or knowing what to do when instructed to leave right away
+          is crucial.
+        </p>
       </section>
 
       <section class="full-screen hidden" id="slide-2">
-        <button onclick="openChecklist()">
-          Open Checklist
-        </button>
-        <p>Best Candy to Have.</p>
+        <h3>
+         <u>Don’t ignore the “Turn Around Don’t Drown” Warning signs!</u> 
+        </h3>
+        <p>
+          Every year, floods cause more deaths compared to any other
+          thunderstorm-related disaster. According to the Centers for Disease
+          Control and Prevention, driving a car into unsafe flood water results
+          in more than half of all drownings caused by flooding. Walking into or
+          close to flood waters results in the second-highest percentage of
+          flood-related fatalities. The strength and power of water are often
+          underrated. Numerous fatalities involve vehicles that are washed
+          downstream. Many of these drownings may be avoided. Never go around
+          the barricades that are in the way of a flooded road. The road may
+          have collapsed underneath that water. A mere 6 inches of fast-moving
+          flood water can knock over an adult. Most vehicles can be carried away
+          by rushing water in just 12 inches of water, and SUVs and trucks can
+          be carried away by rushing water in just 2 feet of water.
+        </p>
       </section>
 
       <section class="full-screen hidden" id="slide-3">
-        <button onclick="openChecklist()">
-          Open Checklist
-        </button>
-        <p>Where to Trick or Treat in Miami</p>
+        <h3><u>How Do I Maintain Myself and My Family Safe During a Flood?</u></h3>
+        <p>
+          Prior to the flood coming to your area: 
+        </p>
+        <ul>
+  <li>Discover whether floodwaters could harm your home and property. Know how high you are above flood stage. </li>
+  <li>Create an emergency strategy for flooding. </li>
+  <li>If you're instructed to leave right away, do so. Bring critical paperwork with you. </li>
+  <li>Before access is cut off, move to a safe location. </li>
+  <li>Follow the news to be informed on the state of the roads. </li>        
+</ul>
+        <p>During the flood:</p>
+<ul>
+  <li>Avoid regions that may flood. Never try to cross moving water.</li>
+  <li>Never go driving on a flooded road. </li>
+  <li>Barricades are placed there for your protection; do not drive around them.</li>
+  <li>If your car stalls, get out right away.</li>
+  <li>Never attempt to cross a flooded area or let kids play there.</li>        
+</ul>
+        
+        <p>After the flood: </p>
+        
+  <ul>
+  <li>Avoid going to disaster zones because you might interfere with rescue operations.</li>
+  <li>Food that has come into contact with floodwater should be thrown out, and drinking water should be warmed before using.</li>
+  <li>Stay away from any structures still submerged in floodwaters. </li>
+  <li>In flooded locations, avoid handling live electrical equipment. </li>
+  <li>Examine structures using flashlights if the power is out. There may be flammables there. </li>        
+</ul>
+        
       </section>
     </div>
-    
+
     <div>
       <button class="downloadButton" onclick="downloadChecklist()">
         Download my checklist as an image :)
       </button>
     </div>
-    
-      <section id="checklist" class="hidden">
-        <h3>My Halloween Checklist</h3>
-        <p>I prefer to...</p>
-        <div>
-          <input type="checkbox" name="input1">
-          <label for="input1">Buy a pre-made costume from the store</label>
-        </div>
-        
-      <div> 
-        <input type="checkbox" name="input2">
-        <label for="input2">Buy supplies for a custom costume</label>
-        </div> 
-      </section>
-    
+
+    <section id="checklist" class="hidden">
+      <h3>Flood Must-Have Materials</h3>
+      <div>
+        <input type="checkbox" name="input1" />
+        <label for="input1">Rope</label>
+      </div>
+
+      <div>
+        <input type="checkbox" name="input2" />
+        <label for="input2">First Aid Kits</label>
+      </div>
+      <div>
+        <input type="checkbox" name="input3" />
+        <label for="input3">Flashlights</label>
+      </div>
+      <div>
+        <input type="checkbox" name="input4" />
+        <label for="input4">Generators</label>
+      </div>
+      <div>
+        <input type="checkbox" name="input5" />
+        <label for="input5">Discharge Hoses</label>
+      </div>
+    </section>
   </body>
 </html>
-
