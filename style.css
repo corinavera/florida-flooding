@@ -4,15 +4,16 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
+  background:lightblue;
 }
-
+/* we might switch up the lightblue background for another image or video of flowing water*/
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
 
-/* adjust typography defaults */
+/* we want to add animation to title */
 body {
   margin: 0;
   font-family: sans-serif;
@@ -22,7 +23,7 @@ body {
   text-align:justify;
 }
 
-/* images and videos max out at full width */
+/* might add video to background */
 img,
 video {
   height: auto;
@@ -36,16 +37,15 @@ video {
 
 i {
   font-size: 28px;
-  color: blue;
+  color: white;
   display: inline-block;
-  margin-top: 15px;
+  margin-top: 10px;
   cursor: pointer;
 }
 
 i:hover {
-  /* add your own hover effect */
-  color: red;
-  opacity: 0.5;
+  color: black;
+  opacity: 0.4;
   transition: all 0.5s;
 }
 
@@ -66,8 +66,7 @@ h3 {
   text-align: center;
 }
 
-/* every element with this class takes up the full 
- width and height of the screen */
+
 .full-screen {
   border: 2px solid grey;
   width: 100%;
@@ -103,14 +102,15 @@ button {
   display: block;
   margin-top: 20px;
   margin-bottom: 20px;
-  background: yellow;
+  background: white;
   border: none;
   padding: 5px;
-  color: black;
+  color: grey;
   cursor: pointer;
   border-radius: 20px;
-  position: center;
+  font-family:'Fjalla One', sans-serif;
 }
+/*might add bouncing animation to buttons*/
 
 button:hover {
   opacity: 0.8;
@@ -123,7 +123,7 @@ button:hover {
   bottom: 0;
   width: 400px;
   padding: 25px;
-  background: #151b54;
+  background: lightblue;
 }
 
 .hidden-checklist {
@@ -131,4 +131,3 @@ button:hover {
   overflow: hidden;
   padding: 0;
 }
-
