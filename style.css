@@ -22,3 +22,100 @@ video {
   height: auto;
   max-width: 100%;
 }
+
+.content-container {
+  position: relative;
+  height:80vh;
+}
+
+i {
+  font-size: 28px;
+  color: orange;
+  display: inline-block;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+i:hover {
+  /* add your own hover effect */
+  color: red;
+  opacity: 0.5;
+  transition: all 0.5s;
+}
+
+.left {
+  margin-left: 10px;
+}
+
+.right {
+  float: right;
+  margin-right: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* every element with this class takes up the full 
+ width and height of the screen */
+.full-screen {
+  border: 1px solid grey;
+  width: 100%;
+  height: 80vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 25px;
+  padding-top: 0;
+}
+
+.full-screen p {
+  padding: 10px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#slide-1 {
+  background: #84B59F;
+}
+
+#slide-2 {
+  background: #31AFD4;
+}
+
+#slide-3 {
+  background: #E9B44C;
+}
+
+button {
+  display: block;
+  margin-top: 20px;
+  background: yellow;
+  border: none;
+  padding: 5px;
+  color: black;
+  cursor: pointer;
+  border-radius:20px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#checklist {
+ position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  width:200px;
+  padding:25px;
+  background:orange;
+}
+
+.hidden-checklist {
+  width:0px;
+  overflow:hidden;
+  padding:0;
+}
