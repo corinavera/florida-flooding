@@ -5,26 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="https://glitch.com/favicon.ico" />
 
-    <title>Florida Flooding!</title>
-    
-    <style>
-      h1 {
-        text-align: center;
-      }
-    </style>
+    <title>Preparing for Halloween</title>
+
+    <!-- import Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
 
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import html2canvas library -->
+   <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js" defer></script>
     
-    <script src="/script.js" defer></script>
+    <script src="script.js" defer></script>
   </head>
-  <body style="background-color:blue;">
+  <body>
     <!-- this is the start of content -->
-    <h1>Florida Flooding!</h1>
-    <p>Wow, this is where my content will go!</p>
+<div>
+  <button id="toggle-checklist" onclick="toggleChecklist()">    
+ Open Checklist</button>
+    </div>
+    <i class="bi bi-arrow-left-square left" onclick="goBack()"></i>
+    <i class="bi bi-arrow-right-square right" onclick="goForward()"></i>
     
-    <p>
-      A new paragraph! Wow!
-    </p>
+    <div class="content-container">
+      <!-- three placeholder sections of content -->
+      <section class="full-screen" id="slide-1">
+        <h1>Preparing for Halloween</h1>
+        <p>Costume Construction Tips</p>
+      </section>
+
+      <section class="full-screen hidden" id="slide-2">
+        <button onclick="openChecklist()">
+          Open Checklist
+        </button>
+        <p>Best Candy to Have.</p>
+      </section>
+
+      <section class="full-screen hidden" id="slide-3">
+        <button onclick="openChecklist()">
+          Open Checklist
+        </button>
+        <p>Where to Trick or Treat in Miami</p>
+      </section>
+    </div>
+    
+    <div>
+      <button class="downloadButton" onclick="downloadChecklist()">
+        Download my checklist as an image :)
+      </button>
+    </div>
+    
+      <section id="checklist" class="hidden">
+        <h3>My Halloween Checklist</h3>
+        <p>I prefer to...</p>
+        <div>
+          <input type="checkbox" name="input1">
+          <label for="input1">Buy a pre-made costume from the store</label>
+        </div>
+        
+      <div> 
+        <input type="checkbox" name="input2">
+        <label for="input2">Buy supplies for a custom costume</label>
+        </div> 
+      </section>
+    
   </body>
 </html>
+
