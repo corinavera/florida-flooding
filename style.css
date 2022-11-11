@@ -4,26 +4,38 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
-  background:lightblue;
 }
-/* we might switch up the lightblue background for another image or video of flowing water*/
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* we switched the lightblue background for another image or video of flowing water*/
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
 
-/* we want to add animation to title */
+/* we added animation to title */
 body {
   margin: 0;
   font-family: sans-serif;
   color: white;
   font-family: "Fjalla One", sans-serif;
-  font-size: 35px;
+  font-size: 25px;
   text-align:justify;
 }
 
-/* might add video to background */
+/*added video to background */
 img,
 video {
   height: auto;
@@ -32,22 +44,23 @@ video {
 
 .content-container {
   position: relative;
-  height: 80vh;
+  height: 60vh;
 }
 
 i {
   font-size: 28px;
-  color: white;
+  color: grey;
   display: inline-block;
   margin-top: 10px;
   cursor: pointer;
 }
 
 i:hover {
-  color: black;
+  color: lightgrey;
   opacity: 0.4;
   transition: all 0.5s;
 }
+
 
 .left {
   margin-left: 10px;
@@ -70,11 +83,13 @@ h3 {
 .full-screen {
   border: 2px solid grey;
   width: 100%;
-  height: 130vh;
+  height: 100vh;
+  position: absolute;
   top: 0;
   left: 0;
   padding: 25px;
   padding-top: 0;
+  overflow: scroll;
 }
 
 .full-screen p {
@@ -95,21 +110,21 @@ h3 {
 }
 
 #slide-3 {
-  background-image: url(https://cdn.glitch.global/e3d10d8b-5fd5-4d01-ba2d-51ea23c01490/kelly-sikkema-_whs7FPfkwQ-unsplash.jpg?v=1667618630457);
+  background-image: url(https://cdn.glitch.global/f84e2e75-9b62-453a-bc2c-896dbeca6e60/storm-g5141f27c2_1920.jpg?v=1668125226321);
 }
 
 #slide-4 {
-  background-image: url(https://cdn.glitch.global/33b6117a-dab1-400d-9e9c-5b1deace5800/For%20website.jpg?v=1668091418277);
+  background-image: url(https://cdn.glitch.global/f84e2e75-9b62-453a-bc2c-896dbeca6e60/alex-dukhanov-ZxZQk7777R4-unsplash.jpg?v=1668132748966);
 }
 
 button {
   display: block;
   margin-top: 20px;
   margin-bottom: 20px;
-  background: white;
+  background: grey;
   border: none;
   padding: 5px;
-  color: grey;
+  color: white;
   cursor: pointer;
   border-radius: 20px;
   font-family:'Fjalla One', sans-serif;
@@ -118,7 +133,12 @@ button {
 
 button:hover {
   opacity: 0.8;
+  box-shadow: 10px 5px 5px grey;
+  -webkit-animation: bounce .3s infinite alternate;
 }
+
+@-webkit-keyframes bounce {
+  to { -webkit-transform: scale(1.2); } }
 
 #checklist {
   position: absolute;
@@ -126,8 +146,11 @@ button:hover {
   right: 0;
   bottom: 0;
   width: 400px;
-  padding: 25px;
-  background: lightblue;
+  padding: 30px;
+  background: lightgrey;
+  font-size: 23px;
+  color:grey;
+  overflow:scroll;
 }
 
 .hidden-checklist {
@@ -135,3 +158,4 @@ button:hover {
   overflow: hidden;
   padding: 0;
 }
+
