@@ -4,6 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Baskerville">
+
+    <video id="background-video" autoplay loop muted poster="https://cdn.glitch.me/f84e2e75-9b62-453a-bc2c-896dbeca6e60/background-video?v=1668123556414">
+<source src="https://cdn.glitch.me/f84e2e75-9b62-453a-bc2c-896dbeca6e60/background-video?v=1668123556414" type="video/mp4">
+</video>
+    
     <title>Florida Flooding</title>
 
     <!-- import Bootstrap icons -->
@@ -17,9 +22,7 @@
 
     <!-- import html2canvas library -->
     <script
-      src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"
-      defer
-    ></script>
+      src="https://html2canvas.hertzen.com/dist/html2canvas.min.js" defer ></script>
 
     <script src="script.js" defer></script>
   </head>
@@ -81,7 +84,7 @@
           be carried away by rushing water in just 2 feet of water.
         </p>
       </section>
-
+        
       <section class="full-screen hidden" id="slide-3">
         <h3><u>How Do I Maintain Myself and My Family Safe During a Flood?</u></h3>
         <p>
@@ -114,42 +117,56 @@
 </ul>
         
       </section>
-      
-  <section class="full-screen hidden" id="slide-4">
-    <h3> Want to learn more? </h3>
-    <p> Please contact using our email address: mdevine619@gmail.com </p>
-  </section>
-    </div>
 
-    <div>
+<section class="full-screen hidden" id="slide-4">
+  <h3><u>What is your Community's flood risk? </u></h3>
+  <p>A community may flood for a variety of reasons, including storm surge, river floods, or significant rainfall. The risk of flooding in a community can also be increased by low-lying or poorly drained areas. Find out how flood hazards affect your area to protect yourself. </p>
+
+<ul>
+<li>Find out whether there are any rivers or creeks that commonly flood.</li>
+<li>Are you living in a low-lying area?</li>
+<li>Determine the elevation of your house.</li>
+</ul> 
+<p>Obtain or review the local flood map. By entering your address at www.floodsmart.gov, you may determine your overall flood risk. You can access your official FEMA flood zone map online at the Map Service Center of FEMA or by contacting your local office of real estate appraisal.</p>
+  
+  <h3>
+    For more information on flooding, watch the video below.
+  </h3>
+  <center>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/4PXj7bOD7IY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+      </section>
+    <section id="checklist" class="hidden">
+      <h3>Flood Must-Have Materials</h3>
+      <div>
+        <input type="checkbox" name="input1" />
+        <label for="input1">Rope- To retrieve individuals from hard to reach areas, such as steep gradients where only rope access is possible.</label>
+      </div>
+
+      <div>
+        <input type="checkbox" name="input2" />
+        <label for="input2">First Aid Kits- They are crucial in an emergency because they lower the risk of minor injuries getting severe. First aid training also provides people confidence to assist with an injury or accident to help relieve or stabilize the situation.</label>
+      </div>
+      <div>
+        <input type="checkbox" name="input3" />
+        <label for="input3">Flashlights- This will illuminate those dark locations or spaces, ensuring your safety and giving you the advantage over any potential risks.</label>
+      </div>
+      <div>
+        <input type="checkbox" name="input4" />
+        <label for="input4">Generators- The conditions that cause flooding frequently also result in power outages. Backup generators can provide you with power to utilize essential home appliances for days on end, if necessary. This provides you with a significant amount of flood protection when you most need it.</label>
+      </div>
+      <div>
+        <input type="checkbox" name="input5" />
+        <label for="input5">Discharge Hoses- Can be used in a variety of ways to discharge and pump water out of certain areas.</label>
+      </div>
+      
+       <div>
       <button class="downloadButton" onclick="downloadChecklist()">
         Download my checklist as an image :)
       </button>
     </div>
 
-    <section id="checklist" class="hidden">
-      <h3>Flood Must-Have Materials</h3>
-      <div>
-        <input type="checkbox" name="input1" />
-        <label for="input1">Rope</label>
-      </div>
-
-      <div>
-        <input type="checkbox" name="input2" />
-        <label for="input2">First Aid Kits</label>
-      </div>
-      <div>
-        <input type="checkbox" name="input3" />
-        <label for="input3">Flashlights</label>
-      </div>
-      <div>
-        <input type="checkbox" name="input4" />
-        <label for="input4">Generators</label>
-      </div>
-      <div>
-        <input type="checkbox" name="input5" />
-        <label for="input5">Discharge Hoses</label>
-      </div>
     </section>
+    </div>
   </body>
 </html>
